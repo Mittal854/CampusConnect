@@ -65,18 +65,31 @@ body {
   color: rgb(255, 129, 57);
   border: 1px solid rgb(255, 129, 57);
 }
+.container1{
+  background-image: url(../images/uni1_1.png);
+  /* background-repeat: no-repeat; */
+  background-size:stretch;
+  /* opacity: 0.5; */
+  /* mix-blend-mode:lighten; */
+  
+  
+}
 
 .content-home2 {
   height: 90vh;
   width: 100%;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
+  
+  
+  
 }
 .home-heading {
   font-size: 50px;
   font-weight: 700;
   line-height: 74px;
+  padding-top: 50px;
 }
 
 .home-span{
