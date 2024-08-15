@@ -4,6 +4,7 @@
   padding: 0%;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
+  list-style: none;
   color: white;
 }
 body {
@@ -129,49 +130,47 @@ body {
   width: 580px;
 }
 
-.about-us-container{
+.about-us-container {
   width: 100%;
   height: 80vh;
 }
 
-.about-us{
+.about-us {
   width: 100%;
   height: 320px;
-  background-color: rgb(54,54,54) ;
+  background-color: rgb(54, 54, 54);
   margin-top: 140px;
   position: relative;
 }
-.content-about{
-  padding: 10px 38px; 
+.content-about {
+  padding: 10px 38px;
 }
-.heading-about{
+.heading-about {
   font-size: 30px;
   font-weight: bold;
   letter-spacing: 1px;
   color: rgb(255, 129, 57);
   margin: 10px 0px;
   margin-bottom: 34px;
-  position: relative;;
-
+  position: relative;
 }
-.heading-about::after{
-  content: '';
+.heading-about::after {
+  content: "";
   position: absolute;
   left: 0px;
   bottom: -8px;
   background-color: rgb(255, 129, 57);
   width: 46px;
   height: 2px;
-   
 }
-.para-about{
+.para-about {
   font-size: 13px;
   font-weight: 500;
   color: rgba(255, 255, 255, 0.695);
   line-height: 21px;
   margin: 25px 0px;
 }
-.link-about{
+.link-about {
   text-decoration: none;
   text-transform: uppercase;
   border: 1px solid rgba(255, 129, 57, 0.5);
@@ -183,10 +182,11 @@ body {
   position: relative;
   z-index: 22;
 }
-.link-about:hover ,.fa-arrow-right:hover{
+.link-about:hover,
+.fa-arrow-right:hover {
   color: white;
 }
-.span-about{
+.span-about {
   position: absolute;
   top: 0px;
   left: 0px;
@@ -196,19 +196,269 @@ body {
   z-index: -1;
   transition: 0.4s ease-in-out;
 }
-.link-about:hover .span-about{
+.link-about:hover .span-about {
   width: 100%;
 }
-.fa-arrow-right{
+.fa-arrow-right {
   color: rgb(255, 129, 57);
   font-size: 11px;
   margin-left: 5px;
 }
-.img-about{
+.img-about {
   height: 420px;
   width: 50%;
   position: absolute;
   top: -36px;
   right: 20px;
-  
+}
+
+.product-category {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 4px;
+}
+
+.heading-product {
+  font-size: 34px;
+  color: rgb(255, 129, 57);
+  margin-bottom: 120px;
+  position: relative;
+}
+.heading-product::after {
+  content: "";
+  position: absolute;
+  left: 0px;
+  bottom: -8px;
+  background-color: rgb(255, 129, 57);
+  width: 56px;
+  height: 2px;
+}
+.card-product {
+  padding: 14px 10px;
+  background-color: #242424 !important;
+}
+.img-card {
+  height: 190px !important;
+}
+.card-title {
+  font-size: 14px;
+  color: rgb(255, 129, 57) !important;
+  width: 100%;
+  border-bottom: 1px solid rgb(255, 129, 57);
+  padding: 5px 0px;
+  margin: 10px 0px;
+  margin-bottom: 20px !important;
+}
+.card-text {
+  color: rgba(255, 255, 255, 0.873);
+  font-size: 12px;
+  line-height: 22px;
+}
+.btn-product-ctg {
+  color: rgb(255, 129, 57);
+  text-decoration: none;
+  font-size: 13px;
+  text-transform: uppercase;
+}
+.btn-product-ctg:hover {
+  color: rgb(250, 183, 144) !important;
+}
+
+.btn-prev,
+.btn-next {
+  position: relative;
+}
+.button-left {
+  position: absolute;
+  left: 20px;
+  padding: 10px 12px;
+  color: #100f10;
+  border-radius: 30px;
+  font-size: 18px;
+  background-color: #2c2c2c;
+}
+.button-right {
+  position: absolute;
+  right: 20px;
+  padding: 10px 12px;
+  color: #100f10;
+  border-radius: 30px;
+  font-size: 18px;
+  background-color: #2c2c2c;
+}
+.button-right:hover {
+  color: #100f10;
+}
+.testimonial {
+  width: 100%;
+  height: 100vh;
+  padding: 20px;
+  margin-top: 60px;
+}
+.heading-testimonial {
+  text-align: center;
+  font-size: 42px;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.884);
+  margin-bottom: 35px;
+}
+.heading-testimonial .styling {
+  color: rgb(255, 129, 57);
+}
+.para-testimonial {
+  color: rgba(255, 255, 255, 0.856);
+  font-size: 15px;
+  letter-spacing: 1px;
+  text-align: center !important;
+  max-width: 760px;
+  margin: 12px auto;
+  line-height: 25px;
+}
+.container-clients {
+  margin: 100px 0px 20px 0px;
+}
+.container-content {
+  width: 90%;
+  height: 350px;
+  background-image: linear-gradient(
+    145deg,
+    rgba(244, 129, 63, 1) 0%,
+    rgba(241, 85, 106, 1) 100%
+  );
+  margin: auto;
+  padding: 30px;
+  text-align: end;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  transition: 0.2s ease-in;
+}
+.container-content:hover {
+  transform: translateY(-14px);
+}
+.img-client {
+  position: absolute;
+  top: -62px;
+  left: -62px;
+  width: 140px;
+  height: 140px;
+  border-radius: 50% !important;
+}
+.img-clients {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.rating {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 12px 0px;
+}
+.rating .stars {
+  font-size: 14px;
+  margin: 0px 2px;
+}
+.client-name {
+  font-size: 14px;
+  margin-top: 20px;
+  color: white;
+  text-align: center;
+}
+.para-client {
+  color: rgba(255, 255, 255, 0.877);
+  font-style: italic;
+  font-weight: 200;
+  font-size: 15px;
+  line-height: 24px;
+  margin: 26px 0px 15px 0;
+  text-align: center;
+}
+.profession {
+  color: #fff;
+  font-weight: 0;
+  font-size: 14px;
+  margin-top: 38px;
+  text-align: center;
+}
+.carousel-indicators button {
+  background-color: rgb(255, 129, 57);
+}
+.carousel-indicators {
+  position: absolute;
+  bottom: -68px !important;
+}
+.contact-form {
+  width: 100%;
+  height: 100vh;
+  margin-top: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.heading-contact {
+  font-size: 34px;
+  color: rgb(255, 129, 57);
+  margin-bottom: 120px;
+  position: relative;
+}
+.heading-contact::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  background-color: rgb(255, 129, 57);
+  width: 56px;
+  height: 2px;
+}
+.form-origin{
+  width: 100%;
+  height: 480px;
+  background-color: rgb(42,41,41);
+  padding: 50px 30px;
+  border-radius:8px ;
+}
+.form-origin input{
+  color:#777;
+  font-size: 14px;
+  border: 1px solid #e4e3e3;
+  background-color: transparent;
+  border-radius: 5px;
+  outline: none;
+  padding: 16px 22px;
+  margin-bottom: 40px;
+}
+::placeholder{
+  color:rgba(255,255,255,0.874) !important
+}
+.form-origin textarea{
+  height: 200px;
+  padding: 20px;
+  font-size: 14px;
+  background-color: transparent;
+  color: #777;
+
+}
+.btn-contact{
+  display: inline-block;
+  font-size: 14px;
+  border-radius: 25px;
+  padding: 15px 25px;
+  border: none;
+  outline: none;
+  background-color: #f4813f;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-decoration: none;
+  margin: 20px 0px;
+  border:2px solid rgb(255, 129, 57)
 }
