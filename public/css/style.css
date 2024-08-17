@@ -17,7 +17,7 @@ body {
 }
 .logo {
   font-weight: 600;
-  color: #0752a7 !important;  
+  color: #0752a7 !important;
   /* font-size: 100px; */
   /* color: rgba(0,0,0,0.92); */
 }
@@ -65,7 +65,7 @@ body {
 
 .btn-navbar:hover {
   background-color: transparent;
-  color:rgba(0, 0, 0, 0.92);
+  color: rgba(0, 0, 0, 0.92);
   border: 1px solid rgba(0, 0, 0, 0.92);
 }
 .container1 {
@@ -109,7 +109,7 @@ body {
   text-decoration: none;
   color: white;
   border: 1px solid rgba(0, 0, 0, 0.92);
-  background-color:rgba(0, 0, 0, 0.92);
+  background-color: rgba(0, 0, 0, 0.92);
   margin: 20px 0px;
   margin-right: 7px;
   border-radius: 50px;
@@ -118,8 +118,8 @@ body {
   font-weight: 600;
   transition: 0.2s ease;
 }
-.btn-home{
-  margin-left:70px;
+.btn-home {
+  margin-left: 70px;
 }
 .btn-2 {
   border: 1px solid rgba(0, 0, 0, 0.92);
@@ -172,8 +172,8 @@ body {
   position: absolute;
   left: 0px;
   bottom: -8px;
-  background-color:#0960c4;
-  width: 46px;
+  background-color: #0960c4;
+  width: 100px;
   height: 2px;
 }
 .para-about {
@@ -184,7 +184,7 @@ body {
   line-height: 21px;
   margin: 25px 0px;
 }
-.slogan{
+.slogan {
   color: #0d66cb;
   font-weight: 600;
 }
@@ -200,18 +200,17 @@ body {
   position: relative;
   z-index: 22;
 }
-.link-about:hover{
+.link-about:hover {
   color: white;
 }
-.link-about:hover
-.fa-arrow-right{
+.link-about:hover .fa-arrow-right {
   color: white;
 }
 .span-about {
   position: absolute;
   top: 0px;
   left: 0px;
-  background-color:#0752a7;
+  background-color: #0752a7;
   width: 0%;
   height: 100%;
   z-index: -1;
@@ -232,7 +231,7 @@ body {
   position: absolute;
   top: -36px;
   right: 20px;
-  border:1px solid #e2dbdb;
+  border: 1px solid #e2dbdb;
 }
 
 .product-category {
@@ -289,7 +288,7 @@ body {
   line-height: 22px;
 }
 .btn-product-ctg {
-  color:#0752a7;
+  color: #0752a7;
   text-decoration: none;
   font-size: 13px;
   text-transform: uppercase;
@@ -338,7 +337,7 @@ body {
   /* font-family: 'Times New Roman', Times, serif; */
 }
 .heading-testimonial .styling {
-  color:#0752a7;
+  color: #0752a7;
   /* font-family: 'Times New Roman', Times, serif; */
 }
 .para-testimonial {
@@ -349,7 +348,6 @@ body {
   max-width: 760px;
   margin: 12px auto;
   line-height: 25px;
-
 }
 .container-clients {
   margin: 100px 0px 20px 0px;
@@ -357,11 +355,7 @@ body {
 .container-content {
   width: 90%;
   height: 350px;
-  background-image: linear-gradient(
-    145deg,
-    #0d66cb 0%,
-    #053060 100%
-  );
+  background-image: linear-gradient(145deg, #0d66cb 0%, #053060 100%);
   margin: auto;
   padding: 30px;
   text-align: end;
@@ -387,7 +381,7 @@ body {
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  border:1px solid #0662cc
+  border: 1px solid #0662cc;
 }
 .rating {
   display: flex;
@@ -415,7 +409,7 @@ body {
   text-align: center;
 }
 
-.saying{
+.saying {
   color: rgba(255, 255, 255, 0.877);
   font-style: italic;
   font-weight: 300;
@@ -432,7 +426,7 @@ body {
   text-align: center;
 }
 .carousel-indicators button {
-  background-color:#0752a7;
+  background-color: #0752a7;
 }
 .carousel-indicators {
   position: absolute;
@@ -477,7 +471,7 @@ body {
 .form-origin input {
   color: rgba(0, 0, 0, 0.874);
   font-size: 14px;
-  border: 1px solid rgba(0,0,0,0.874) ;
+  border: 1px solid rgba(0, 0, 0, 0.874);
   background-color: transparent;
   border-radius: 5px;
   outline: none;
@@ -492,7 +486,7 @@ body {
   padding: 20px;
   font-size: 14px;
   background-color: transparent;
-  border: 1px solid rgba(0,0,0,0.874) ;
+  border: 1px solid rgba(0, 0, 0, 0.874);
   color: rgba(0, 0, 0, 0.874);
 }
 .btn-contact {
@@ -519,29 +513,28 @@ body {
   justify-content: center;
   flex-direction: column;
 }
-.heading-content{
-  color:rgb(0, 0, 0);
+.heading-content {
+  color: rgb(0, 0, 0);
   margin-bottom: 30px;
   font-size: 42px;
   text-transform: capitalize;
   font-weight: 700;
   letter-spacing: 1px;
 }
-.heading-content span{
-  color:#0752a7;
+.heading-content span {
+  color: #0752a7;
 }
-.para-content{
+.para-content {
   font-size: 15px;
   /* line-height: 30px; */
-  color:#000000;
+  color: #000000;
   margin: 16px 0px;
   font-weight: 500;
-
 }
-.box-container2{
-  margin-left:80px;
+.box-container2 {
+  margin-left: 80px;
 }
-footer{
+footer {
   background-color: #e8dede;
   margin: 0 0 !important;
   height: 10vh;
@@ -550,7 +543,7 @@ footer{
   align-items: center;
   justify-content: center;
 }
-.para-footer{
+.para-footer {
   margin: 0 0;
   color: #0662cc;
 }
