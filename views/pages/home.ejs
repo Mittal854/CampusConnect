@@ -68,9 +68,26 @@
 <section id="login">
   <div class="container">
     <div class="login-container">
-      <button class="home-links">Login as Student</button>
-      <button class="home-links">Login as Teacher</button>
-      <button class="home-links">Login as Club</button>
+      <button class="home-links show-login">Login as Student</button>
+      <button class="home-links show-login">Login as Teacher</button>
+      <button class="home-links show-login">Login as Club</button>
+    </div>
+    <div class="popup">
+      <div class="close-btn">&times;</div>
+      <form action="" class="form">
+        <h2>Login</h2>
+        <div class="form-element">
+          <label for="email">Email</label>
+          <input type="text" id="email" placeholder="Enter Email" />
+        </div>
+        <div class="form-element">
+          <label for="password">Password</label>
+          <input type="password" id="password" placeholder="Enter Password" />
+        </div>
+        <div class="form-element">
+          <button>Sign in</button>
+        </div>
+      </form>
     </div>
   </div>
 </section>

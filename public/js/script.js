@@ -9,3 +9,15 @@ loginLink.addEventListener("click", function () {
     loginSection.style.display = "flex";
   }
 });
+document.querySelectorAll(".show-login").forEach(function (button, index) {
+  button.addEventListener("click", function () {
+    console.log("Button clicked:", index); // This will help identify if the button click is being registered
+    document.querySelector(".popup").classList.add("active");
+  });
+});
+
+document
+  .querySelector(".popup .close-btn")
+  .addEventListener("click", function () {
+    document.querySelector(".popup").classList.remove("active");
+  });
