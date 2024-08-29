@@ -1,0 +1,42 @@
+<div class="sidebar">
+  <center>
+    <img src="images/teacher.png" class="profile_image" alt="" />
+    <h4>Teacher</h4>
+  </center>
+  <a
+    href="/teacher_dashboard"
+    class="<% if(page_name == 'teacher-dashboard'){%> active <% } %>"
+    ><i class="fas fa-desktop"></i><span>Teacher Portal</span></a
+  >
+  <a
+    href="/teacher_noticeboard"
+    class="<% if(page_name == 'teacher-noticeboard'){%> active <% } %>"
+    ><i class="fa-duotone fa-solid fa-envelope-open-text"></i><span>Notice Board</span></a
+  >
+  <a
+    href="/teacher_students"
+    class="<% if(page_name == 'teacher-students'){%> active <% } %>"
+    ><i class="fa-regular fa-screen-users"></i><span>My Students</span></a
+  > 
+  <a
+    href="/teacher_attendance"
+    class="<% if(page_name == 'teacher-attendance'){%> active <% } %>"
+    ><i class="fa-solid fa-calendar-days"></i><span>Attendance</span></a
+  >
+  <a
+    href="/teacher_timetable"
+    class="<% if(page_name == 'teacher-timetable'){%> active <% } %>"
+    ><i class="fa-sharp fa-regular fa-calendar-clock"></i><span>Time Table</span></a
+  >
+  <a
+    href="/teacher_quizes"
+    class="<% if(page_name == 'teacher-quiz'){%> active <% } %>"
+    ><i class="fa-solid fa-clipboard-check"></i><span>Quiz</span></a
+  >
+  
+  <a
+    href="/teacher_reportcard"
+    class="<% if(page_name == 'teacher-reportcard'){%> active <% } %>"
+    ><i class="fa-solid fa-chart-mixed"></i></i><span>Report Card</span></a
+  >
+</div>
