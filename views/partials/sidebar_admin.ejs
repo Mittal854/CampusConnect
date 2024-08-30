@@ -1,12 +1,12 @@
 <div class="sidebar">
   <center>
     <img src="images/teacher.png" class="profile_image" alt="" />
-    <h4>Teacher</h4>
+    <h4>Admin</h4>
   </center>
   <a
     href="/admin_dashboard"
     class="<% if(page_name == 'admin-dashboard'){%> active <% } %>"
-    ><i class="fas fa-desktop"></i><span>Admin</span></a
+    ><i class="fas fa-desktop"></i><span>Profile</span></a
   >
   <a
     href="/admin_noticeboard"
@@ -15,13 +15,13 @@
   >
   <a
     href="/admin_students"
-    class="<% if(page_name == 'teacher-students'){%> active <% } %>"
-    ><i class="fa-regular fa-screen-users"></i><span>My Students</span></a
+    class="<% if(page_name == 'admin-students'){%> active <% } %>"
+    ><i class="fa-regular fa-screen-users"></i><span>Students</span></a
   > 
   <a
     href="/admin_teachers"
-    class="<% if(page_name == 'teacher-students'){%> active <% } %>"
-    ><i class="fa-regular fa-screen-users"></i><span>My Teachers</span></a
+    class="<% if(page_name == 'admin-teachers'){%> active <% } %>"
+    ><i class="fa-regular fa-screen-users"></i><span>Teachers</span></a
   > 
   
 </div>
