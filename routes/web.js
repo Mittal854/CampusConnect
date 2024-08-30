@@ -17,6 +17,15 @@ import { teacherattendanceController } from "../controllers/teacherattendanceCon
 import { teachertimetableController } from "../controllers/teachertimetableController.js";
 import { teacherquizesController } from "../controllers/teacherquizesController.js";
 import { teacherreportcardController } from "../controllers/teacherreportcardController.js";
+import { admindashboardController } from "../controllers/admindashboardController.js";
+import { adminnoticeboardController } from "../controllers/adminnoticeboardController.js";
+import { adminstudentsController } from "../controllers/adminstudentsController.js";
+import { adminteachersController } from "../controllers/adminteachersController.js";
+import { clubcertificationsController } from "../controllers/clubcertificationsController.js";
+import { clubdashboardController } from "../controllers/clubdashboardController.js";
+import { clubmembersController } from "../controllers/clubmembersController.js";
+import { clubnoticeboardController } from "../controllers/clubnoticeboardController.js";
+import { clubgalleryController } from "../controllers/clubgalleryController.js";
 
 router.get("/", homeController);
 router.get("/student_dashboard", studentdashboardController);
@@ -34,5 +43,15 @@ router.get("/teacher_attendance", teacherattendanceController);
 router.get("/teacher_timetable", teachertimetableController);
 router.get("/teacher_quizes", teacherquizesController);
 router.get("/teacher_reportcard", teacherreportcardController);
+router.get("/admin_dashboard", admindashboardController);
+router.get("/admin_noticeboard", adminnoticeboardController);
+router.get("/admin_students", adminstudentsController);
+router.get("/admin_teachers", adminteachersController);
+router.get("/club_certifications", clubcertificationsController);
+router.get("/club_dashboard", clubdashboardController);
+router.get("/club_members", clubmembersController);
+router.get("/club_noticeboard", clubnoticeboardController);
+router.get("/club_gallery", clubgalleryController);
+
 
 export default router;
