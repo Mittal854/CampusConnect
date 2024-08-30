@@ -1,4 +1,4 @@
-<table>
+<!-- <table border="1">
   <tr>
     <th><%= Sub_Name %></th>
   </tr>
@@ -29,4 +29,24 @@
   </tr>
   
 </table>
- 
+  -->
+
+<div class="table">
+  <div class="table-content">
+    <strong><%= Sub_Name %></strong>
+  </div>
+  <div class="table-content">
+    <strong>From: </strong><%= From %><strong
+      >&nbsp;&nbsp;&nbsp;&nbsp To: </strong
+    ><%= To%>
+  </div>
+  <div class="table-content"><strong>Attended: </strong><%= attended %></div>
+  <div class="table-content"><strong>Absent: </strong><%= absent %></div>
+  <div class="table-content">
+    <strong>Total: </strong><%= attended+absent %>
+  </div>
+  <div class="table-content">
+    <strong>Total: </strong><%= ((attended/(attended+absent))*100).toFixed(2)
+    %>%
+  </div>
+</div>
