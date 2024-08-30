@@ -1,0 +1,27 @@
+<div class="sidebar">
+  <center>
+    <img src="images/teacher.png" class="profile_image" alt="" />
+    <h4>Teacher</h4>
+  </center>
+  <a
+    href="/admin_dashboard"
+    class="<% if(page_name == 'admin-dashboard'){%> active <% } %>"
+    ><i class="fas fa-desktop"></i><span>Admin</span></a
+  >
+  <a
+    href="/admin_noticeboard"
+    class="<% if(page_name == 'admin-noticeboard'){%> active <% } %>"
+    ><i class="fa-duotone fa-solid fa-envelope-open-text"></i><span>Notice Board</span></a
+  >
+  <a
+    href="/admin_students"
+    class="<% if(page_name == 'teacher-students'){%> active <% } %>"
+    ><i class="fa-regular fa-screen-users"></i><span>My Students</span></a
+  > 
+  <a
+    href="/admin_teachers"
+    class="<% if(page_name == 'teacher-students'){%> active <% } %>"
+    ><i class="fa-regular fa-screen-users"></i><span>My Teachers</span></a
+  > 
+  
+</div>
