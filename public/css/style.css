@@ -713,6 +713,7 @@ footer {
   display: flex;
   width: 100%;
   position: fixed;
+  z-index: 1000;
 }
 .btn-navbar1 {
   display: inline-block;
@@ -746,11 +747,8 @@ footer {
 } */
 
 .bg-c-blue {
-  background:linear-gradient(#e2dbdb 0%,#e2dbdb 100%);
-
+  background: linear-gradient(#e2dbdb 0%, #e2dbdb 100%);
 }
-
-
 
 .card {
   border-radius: 5px;
@@ -761,7 +759,7 @@ footer {
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   margin-right: 30px;
-  width:28%;
+  width: 28%;
   background-color: #e2dbdb;
   outline: none;
 }
@@ -781,11 +779,34 @@ footer {
 .f-right {
   float: right;
 }
-.container2{
-  margin-left:300px;
+.container2 {
+  margin-left: 300px;
   padding-top: 100px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+}
+.alert {
+  /* margin-left: 5%; */
+  margin-right: 8%;
+  padding: 20px;
+  background-color: #e2dbdb !important;
+  color: white;
+  width: 100%;
+}
+.alert .strong{
+  border-bottom: 2px solid #0662cc;
+  margin-bottom: -10px;
+  height: auto;
+}
+.alert p{
+  color: #0662cc;
+  font-weight: 600;
+  font-size: 16px;
+  margin-bottom: 0;
+}
+.alert span{
+  font-size: 18px;
+  color: #0662cc;
 }

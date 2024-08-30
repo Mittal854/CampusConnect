@@ -1,0 +1,32 @@
+<table>
+  <tr>
+    <th><%= Sub_Name %></th>
+  </tr>
+  <tr>
+    <td>
+      <strong>From: </strong><%= From %><strong>&nbsp;&nbsp;To: </strong><%= To%>
+    </td>
+  </tr>
+  <tr>
+    <td>
+        <strong>Attended: </strong><%= attended %>
+    </td>
+  </tr>
+  <tr>
+    <td>
+        <strong>Absent: </strong><%= absent %>
+    </td>
+  </tr>
+  <tr>
+    <td>
+        <strong>Total: </strong><%= attended+absent %>
+    </td>
+  </tr>
+  <tr>
+    <td>
+        <strong>Total: </strong><%= ((attended/(attended+absent))*100).toFixed(2) %>%
+    </td>
+  </tr>
+  
+</table>
+ 
