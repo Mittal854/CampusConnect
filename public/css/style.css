@@ -752,8 +752,8 @@ footer {
 
 .card {
   border-radius: 5px;
-  /* -webkit-box-shadow: 0 1px 2.94px 0.06px rgba(4, 26, 55, 0.16);
-  box-shadow: 0 1px 2.94px 0.06px rgba(4, 26, 55, 0.16); */
+  /* -webkit-box-shadow: 0 1px 2.94px 0.06px rgba(4, 26, 55, 0.16); */
+  box-shadow: 8px 8px 5px #d9d8d8;
   border: none;
   margin-bottom: 30px;
   -webkit-transition: all 0.3s ease-in-out;
@@ -830,4 +830,28 @@ footer {
 }
 .table-content strong{
   margin-right: 10px;
+}
+.report-ind{
+  background-color: #e2dbdb;
+  display: flex;
+  flex-direction: row;
+
+
+}
+.report-ind-block{
+  width: 50%;
+   height: 100%;
+  border:1px solid #f4eded;
+  background-color: #e2dbdb;
+  /* display: flex; */
+  padding: 8px 18px;
+  text-align: center;
+}
+.report{
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  margin-top: 100px;
+  height: auto;
+  box-shadow: 15px 15px 5px #d9d8d8;
 }
