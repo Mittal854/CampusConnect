@@ -893,3 +893,151 @@ footer {
 .student {
   font-size: 12px; /* Smaller font size for the description */
 }
+
+
+.cardadmin {
+  width: 180px; /* Adjusted width for smaller boxes */
+  height: 100px; /* Adjusted height for smaller boxes */
+  margin: 10px; /* Space between boxes */
+  display: inline-block; /* To align boxes in rows */
+  vertical-align: top; /* Align the boxes at the top */
+  border-radius: 20px;
+  box-shadow: 5px 5px 5px #d9d8d8;
+  
+}
+
+.cardadmin-block {
+  padding: 10px;
+  margin-top: 10px;
+  
+  
+}
+
+.cardadmin .order-card {
+  background-color: #007bff; /* Blue background color */
+  color: white;
+  border-radius: 8px; /* Rounded corners */
+}
+
+.stadmin .m-b-20 {
+  margin-bottom: 10px;
+  font-size: 14px; /* Smaller font size for the title */
+}
+
+.stadmin .text-right {
+  text-align: right;
+  font-size: 14px; /* Smaller font size for the icon */
+}
+
+.studentadmin {
+  font-size: 12px; /* Smaller font size for the description */
+}
+
+
+
+
+.container {
+  max-width: 900px;
+  width: 100%;
+  border-radius: 6px;
+  padding: 30px;
+  margin: 0 15px;
+  background-color: #f4eded;
+ 
+}
+
+.container header {
+  font-size: 20px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 16px;
+  position: relative;
+}
+
+/* .container header::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  height: 3px;
+  width: 27px;
+  border-radius: 8px;
+  background-color: #4070f4;
+} */
+
+.container form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.container form .title {
+  font-size: 16px;
+  font-weight: 500;
+  color: #333;
+}
+
+.container form .fields {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.fields .input-field {
+  flex: 1 1 calc(33.333% - 10px);
+  display: flex;
+  flex-direction: column;
+}
+
+.input-field label {
+  font-size: 12px;
+  font-weight: 500;
+  color: #2e2e2e;
+  margin-bottom: 8px;
+}
+
+.input-field input, 
+.input-field select {
+  font-size: 14px;
+  padding: 0 15px;
+  height: 42px;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  color: #333;
+}
+
+.input-field input[type="date"],
+.input-field select {
+  color: #707070;
+}
+
+.input-field input[type="date"]:valid {
+  color: #333;
+}
+
+.nextBtn {
+  width: 150px;
+  height: 45px;
+  border: none;
+  color: #000000;
+  border-radius: 5px;
+  cursor: pointer;
+  background-image: linear-gradient(145deg, #338bf0 0%, #497bb5 100%);
+  margin-top: 20px;
+}
+
+.container form button:hover {
+  background-color: #265df2;
+}
+
+@media (max-width: 750px) {
+  .fields .input-field {
+    flex: 1 1 calc(50% - 10px);
+  }
+}
+
+@media (max-width: 550px) {
+  .fields .input-field {
+    flex: 1 1 100%;
+  }
+}
