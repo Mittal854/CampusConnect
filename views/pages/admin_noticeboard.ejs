@@ -1,4 +1,34 @@
-<%- include('../partials/header.ejs') %>
-<%- include('../partials/sidebar_admin.ejs',{page_name:'admin-noticeboard'}) %>
-<%- include('../partials/header_profile.ejs') %>
+<%- include('../partials/header.ejs') %> <%-
+include('../partials/sidebar_admin.ejs',{page_name:'admin-noticeboard'}) %> <%-
+include('../partials/header_profile.ejs') %>
+<div class="container2">
+<div class="container">
+  <header>Notices</header>
+  <form action="#">
+    <div class="form first">
+      <div class="details personal">
+        <span class="form-title">Notice Details</span>
+        <div class="fields">
+          <div class="input-field">
+            <label>Heading</label>
+            <input type="text" placeholder="Enter heading" required />
+          </div>
+          <div class="input-field">
+            <label>Message</label>
+            <input type="text" placeholder="Message" required />
+          </div>
+        </div>
+        <button class="nextBtn">Post notice</button>
+      </div>
+    </div>
+  </form>
+</div>
+<%- include('../partials/notices.ejs',{heading:'Opening of GDCS Club',message:'This is to inform students that the registration for joing the GDSC club has been opened. So fill ip the form as soon as possible'}) %>
+    <%- include('../partials/notices.ejs',{heading:'Opening of GDCS Club',message:'This is to inform students that the registration for joing the GDSC club has been opened. So fill ip the form as soon as possible'}) %>
+    <%- include('../partials/notices.ejs',{heading:'Opening of GDCS Club',message:'This is to inform students that the registration for joing the GDSC club has been opened. So fill ip the form as soon as possible'}) %>
+    <%- include('../partials/notices.ejs',{heading:'Opening of GDCS Club',message:'This is to inform students that the registration for joing the GDSC club has been opened. So fill ip the form as soon as possible'}) %>
+    <%- include('../partials/notices.ejs',{heading:'Opening of GDCS Club',message:'This is to inform students that the registration for joing the GDSC club has been opened. So fill ip the form as soon as possible'}) %>
+    <%- include('../partials/notices.ejs',{heading:'Opening of GDCS Club',message:'This is to inform students that the registration for joing the GDSC club has been opened. So fill ip the form as soon as possible'}) %>
+    <%- include('../partials/notices.ejs',{heading:'Opening of GDCS Club',message:'This is to inform students that the registration for joing the GDSC club has been opened. So fill ip the form as soon as possible'}) %>
+    </div>
 <%- include('../partials/footer.ejs') %>
