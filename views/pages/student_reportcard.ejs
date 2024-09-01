@@ -1,21 +1,24 @@
 <%- include('../partials/header.ejs') %> <%-
 include('../partials/sidebar_student.ejs',{page_name:'student-reportcard'}) %>
 <%- include('../partials/header_profile.ejs') %>
+
+
 <div class="container2">
   <div class="report">
     <div class="report-ind">
-      <div class="report-ind-block" style="font-weight: 700; font-size: 18px">
+      <div class="report-ind-block" style="font-weight: 500; font-size: 18px; background-color:#0d66cb;color: white;">
         Subject
       </div>
-      <div class="report-ind-block" style="font-weight: 700; font-size: 18px">
+      <div class="report-ind-block" style="font-weight: 500; font-size: 18px;background-color:#0d66cb;color: white;">
         Marks
       </div>
     </div>
-    <%-include('../partials/reportcard_ind.ejs',{sub:'Maths',marks:90}) %>
-    <%-include('../partials/reportcard_ind.ejs',{sub:'Maths',marks:90}) %>
-    <%-include('../partials/reportcard_ind.ejs',{sub:'Maths',marks:90}) %>
-    <%-include('../partials/reportcard_ind.ejs',{sub:'Maths',marks:90}) %>
-    <%-include('../partials/reportcard_ind.ejs',{sub:'Maths',marks:90}) %>
+    <%-include('../partials/reportcard_ind.ejs',{sub:'Introduction to Python programming',marks:50}) %>
+    <%-include('../partials/reportcard_ind.ejs',{sub:'Calculas and Statistical Analysis',marks:30}) %>
+    <%-include('../partials/reportcard_ind.ejs',{sub:'Modern Physics',marks:40}) %>
+    <%-include('../partials/reportcard_ind.ejs',{sub:'Source code management',marks:60}) %>
+    <%-include('../partials/reportcard_ind.ejs',{sub:'Operating System',marks:20}) %>
+    <%-include('../partials/reportcard_ind.ejs',{sub:'Front end engineering',marks:30}) %>
   </div>
 </div>
 <%- include('../partials/footer.ejs') %>
