@@ -1,29 +1,70 @@
-<%- include('../partials/header.ejs') %>
-<%- include('../partials/sidebar_teacher.ejs',{page_name:'teacher-attendance'}) %>
+<%- include('../partials/header.ejs') %> <%-
+include('../partials/sidebar_teacher.ejs',{page_name:'teacher-attendance'}) %>
 <%- include('../partials/header_profile.ejs') %>
 <div class="container2">
-    <h2>Teacher Attendance Records</h2>
-    <table class="attendance-table">
-        <thead>
-            <tr>
-                <th>Date</th>
-                <th>Class</th>
-                <th>Attendance Status</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>2024-09-01</td>
-                <td>Math 101</td>
-                <td>Present</td>
-            </tr>
-            <tr>
-                <td>2024-09-02</td>
-                <td>Physics 101</td>
-                <td>Absent</td>
-            </tr>
-            <!-- Add more records as needed -->
-        </tbody>
-    </table>
+  <form action="/create-quiz" method="POST" class="quiz-form">
+    <!-- Repeatable section for questions -->
+    <div id="questions-container">
+      <div class="question-block">
+        <div class="input-field">
+          <label for="question-1">Roll No.</label>
+          <input
+            type="text"
+            id="question1"
+            name="questions[0][question]"
+            required />
+        </div>
+
+        <div class="input-field">
+          <label for="option1-1">Subject</label>
+          <input
+            type="text"
+            id="option1-1"
+            name="questions[0][options][0]"
+            required />
+        </div>
+
+        <div class="input-field">
+          <label for="option2-1">From</label>
+          <input
+            type="date"
+            id="option2-1"
+            name="questions[0][options][1]"
+            required />
+        </div>
+
+        <div class="input-field">
+          <label for="option3-1">To</label>
+          <input
+            type="date"
+            id="option3-1"
+            name="questions[0][options][2]"
+            required />
+        </div>
+
+        <div class="input-field">
+          <label for="option4-1">Total Attended</label>
+          <input
+            type="number"
+            id="option4-1"
+            name="questions[0][options][3]"
+            required />
+        </div>
+
+        <div class="input-field">
+          <label for="option4-1">Total Absent</label>
+          <input
+            type="number"
+            id="option4-1"
+            name="questions[0][options][3]"
+            required />
+        </div>
+      </div>
+    </div>
+
+    <button type="submit" class="nextBtn" style="margin-left: 10px">
+      Upload
+    </button>
+  </form>
 </div>
 <%- include('../partials/footer.ejs') %>

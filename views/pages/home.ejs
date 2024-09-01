@@ -51,9 +51,9 @@
                   <a href="#login1" id="login-link" class="home-links">Login</a>
                   <a href="#campus" class="home-links btn-2">Explore</a>
                 </div>
+                <section id="login1"></section>
               </div>
             </div>
-            <section id="login1"></section>
           </div>
         </div>
       </div>
@@ -62,22 +62,23 @@
   <section id="login">
     <div class="container">
       <div class="login-container">
-        <button class="home-links show-login">Login as Student</button>
-        <button class="home-links show-login">Login as Teacher</button>
-        <button class="home-links show-login">Login as Club</button>
+        <button class="home-links show-login" data-role="student" >Login as Student</button>
+        <button class="home-links show-login" data-role="teacher" >Login as Teacher</button>
+        <button class="home-links show-login" data-role="club" >Login as Club</button>
       </div>
       <div class="popup">
         <div class="close-btn">&times;</div>
-        <form action="" class="form">
+        <form action="/login" class="form" method="POST">
           <h2>Login</h2>
           <div class="form-element">
             <label for="email">Email</label>
-            <input type="text" id="email" placeholder="Enter Email" />
+            <input type="text" id="email" name="email" placeholder="Enter Email" />
           </div>
           <div class="form-element">
             <label for="password">Password</label>
-            <input type="password" id="password" placeholder="Enter Password" />
+            <input type="password" id="password" name="password" placeholder="Enter Password" />
           </div>
+          <input type="hidden" id="role" name="role" value="" />
           <div class="form-element">
             <button>Sign in</button>
           </div>
