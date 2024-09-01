@@ -1275,3 +1275,18 @@ margin-top: 70px;
   padding: 10px;
   position: relative; /* Ensure we can position the class room */
 }
+
+.form1{
+  width: 40%;
+  margin-top: 110px;
+  margin-left: 550px;
+  box-shadow: 5px 5px 5px rgb(225, 208, 208);
+  padding: 18px;
+  background-color:#e2dbdb;
+}
+
+.form1 label{
+  font-size: 14px;
+  margin-top: 8px;
+  padding: 6px;
+}
