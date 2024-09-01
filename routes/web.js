@@ -9,7 +9,6 @@ import { studentattendanceController } from "../controllers/studentattendanceCon
 import { studentmoduleController } from "../controllers/studentmoduleController.js";
 import { studenttimetableController } from "../controllers/studenttimetableController.js";
 import { studentquizController } from "../controllers/studentquizController.js";
-import { studentachievementsController } from "../controllers/studentachievementsController.js";
 import { studentreportcardController } from "../controllers/studentreportcardController.js";
 import { teachernoticeboardController } from "../controllers/teachernoticeboardControlle.js";
 import { teacherstudentsController } from "../controllers/teacherstudent.js";
@@ -35,7 +34,6 @@ router.get("/student_attendance", studentattendanceController);
 router.get("/student_modules", studentmoduleController);
 router.get("/student_timetable", studenttimetableController);
 router.get("/student_quizes", studentquizController);
-router.get("/student_achievements", studentachievementsController);
 router.get("/student_reportcard", studentreportcardController);
 router.get("/teacher_dashboard", teacherdashboardController);
 router.get("/teacher_noticeboard", teachernoticeboardController);
