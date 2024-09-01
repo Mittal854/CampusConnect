@@ -1,4 +1,29 @@
 <%- include('../partials/header.ejs') %>
 <%- include('../partials/sidebar_club.ejs',{page_name:'club-members'}) %>
 <%- include('../partials/header_profile.ejs') %>
+<div class="container2">
+    <h2>Club Members</h2>
+    <table class="members-table">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Role</th>
+                <th>Contact</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>John Doe</td>
+                <td>Member</td>
+                <td>john.doe@example.com</td>
+            </tr>
+            <tr>
+                <td>Jane Smith</td>
+                <td>Secretary</td>
+                <td>jane.smith@example.com</td>
+            </tr>
+            <!-- Add more members as needed -->
+        </tbody>
+    </table>
+</div>
 <%- include('../partials/footer.ejs') %>

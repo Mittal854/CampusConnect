@@ -1,5 +1,14 @@
 <%- include('../partials/header.ejs') %>
 <%- include('../partials/sidebar_teacher.ejs',{page_name:'teacher-reportcard'}) %>
 <%- include('../partials/header_profile.ejs') %>
+<div class="container2">
+    <!-- <h2>Manage Report Cards</h2> -->
+    <form action="/generate-report" method="POST" class="report-form">
+        <div class="input-field">
+            <label for="student-id">Student ID:</label>
+            <input type="text" id="student-id" name="student_id" required>
+        </div>
+        <button type="submit" class="nextBtn">Generate Report Card</button>
+    </form>
+</div>
 <%- include('../partials/footer.ejs') %>
-

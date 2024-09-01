@@ -1,5 +1,18 @@
 <%- include('../partials/header.ejs') %>
 <%- include('../partials/sidebar_teacher.ejs',{page_name:'teacher-quiz'}) %>
 <%- include('../partials/header_profile.ejs') %>
+<div class="container2">
+    <!-- <h2>Manage Quizzes</h2> -->
+    <form action="/create-quiz" method="POST" class="quiz-form">
+        <div class="input-field">
+            <label for="quiz-title">Quiz Title:</label>
+            <input type="text" id="quiz-title" name="quiz_title" required>
+        </div>
+        <div class="input-field">
+            <label for="quiz-description">Description:</label>
+            <textarea id="quiz-description" name="quiz_description" required></textarea>
+        </div>
+        <button type="submit" class="nextBtn">Create Quiz</button>
+    </form>
+</div>
 <%- include('../partials/footer.ejs') %>
-

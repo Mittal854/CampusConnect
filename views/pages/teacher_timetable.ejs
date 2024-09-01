@@ -1,5 +1,30 @@
 <%- include('../partials/header.ejs') %>
 <%- include('../partials/sidebar_teacher.ejs',{page_name:'teacher-timetable'}) %>
 <%- include('../partials/header_profile.ejs') %>
+<div class="container2">
+    <h2>Teacher Timetable</h2>
+    <table class="timetable-table">
+        <thead>
+            <tr>
+                <th>Time</th>
+                <th>Monday</th>
+                <th>Tuesday</th>
+                <th>Wednesday</th>
+                <th>Thursday</th>
+                <th>Friday</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>09:00 - 10:00</td>
+                <td>Math</td>
+                <td>Physics</td>
+                <td>Chemistry</td>
+                <td>Biology</td>
+                <td>Computer Science</td>
+            </tr>
+            <!-- Add more rows as needed -->
+        </tbody>
+    </table>
+</div>
 <%- include('../partials/footer.ejs') %>
-

@@ -1,5 +1,29 @@
 <%- include('../partials/header.ejs') %>
 <%- include('../partials/sidebar_student.ejs',{page_name:'student-modules'}) %>
 <%- include('../partials/header_profile.ejs') %>
+<div class="container2">
+    <h2>Student Modules</h2>
+    <table class="modules-table">
+        <thead>
+            <tr>
+                <th>Module Code</th>
+                <th>Module Name</th>
+                <th>Credits</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>CSE101</td>
+                <td>Introduction to Programming</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>CSE102</td>
+                <td>Data Structures</td>
+                <td>3</td>
+            </tr>
+            <!-- Add more modules as needed -->
+        </tbody>
+    </table>
+</div>
 <%- include('../partials/footer.ejs') %>
-

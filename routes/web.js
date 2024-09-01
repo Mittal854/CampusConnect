@@ -26,6 +26,7 @@ import { clubdashboardController } from "../controllers/clubdashboardController.
 import { clubmembersController } from "../controllers/clubmembersController.js";
 import { clubnoticeboardController } from "../controllers/clubnoticeboardController.js";
 import { clubgalleryController } from "../controllers/clubgalleryController.js";
+import { adminclubController } from "../controllers/adminclubController.js";
 
 router.get("/", homeController);
 router.get("/student_dashboard", studentdashboardController);
@@ -52,6 +53,7 @@ router.get("/club_dashboard", clubdashboardController);
 router.get("/club_members", clubmembersController);
 router.get("/club_noticeboard", clubnoticeboardController);
 router.get("/club_gallery", clubgalleryController);
+router.get("/admin_club", adminclubController);
 
 
 export default router;
