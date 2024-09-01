@@ -1071,9 +1071,15 @@ h2 {
 }
 
 .members-table, .modules-table, .attendance-table, .timetable-table {
-  width: 100%;
+  width: 90%;
   border-collapse: collapse;
-  margin-top: 20px;
+  margin-top: 40px;
+  margin-right: 50px;
+
+}
+
+.modules-table{
+box-shadow: 6px 6px 6px #d1c3c3;
 }
 
 .members-table th, .modules-table th, .attendance-table th, .timetable-table th {
@@ -1084,7 +1090,7 @@ h2 {
 
 .members-table td, .modules-table td, .attendance-table td, .timetable-table td {
   border: 1px solid #ddd;
-  padding: 8px;
+  padding: 12px;
 }
 
 .members-table tr:nth-child(even), .modules-table tr:nth-child(even), .attendance-table tr:nth-child(even), .timetable-table tr:nth-child(even) {
