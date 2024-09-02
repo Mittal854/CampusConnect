@@ -1,14 +1,47 @@
 <%- include('../partials/header.ejs') %>
 <%- include('../partials/sidebar_teacher.ejs',{page_name:'teacher-reportcard'}) %>
 <%- include('../partials/header_profile.ejs') %>
-<div class="container2">
+<div class="container-form">
     <!-- <h2>Manage Report Cards</h2> -->
-    <form action="/generate-report" method="POST" class="report-form">
-        <div class="input-field">
-            <label for="student-id">Student ID:</label>
-            <input type="text" id="student-id" name="student_id" required>
-        </div>
-        <button type="submit" class="nextBtn">Generate Report Card</button>
-    </form>
+   
+        <header>Upload Marks</header>
+        <form action="#">
+            <div class="form1">
+                <div class="details marks">
+                    <span class="title" style="font-size: 22px;">Marks</span>
+                    <div class="fields">
+                        <div class="input-field" >
+                            <label >Roll Number</label>
+                            <input type="text" placeholder="Enter student roll number" required>
+                        </div>
+                        <div class="input-field">
+                            <label >Subject</label>
+                            <select required>
+                                <option disabled selected>Select subject</option>
+                                <option>Introduction to python programming</option>
+                                <option>Calculas and Statistical Analysis</option>
+                                <option>Modern Physics</option>
+                                <option>Source code management</option>
+                                <option>Operating System</option>
+                                <option>Front end engineering</option>
+                                <!-- Add more subjects as needed -->
+                            </select>
+                        </div>
+                        <div class="input-field">
+                            <label>Marks Obtained</label>
+                            <input type="text" placeholder="Enter marks obtained" required>
+                        </div>
+                        <div class="input-field">
+                            <label>Total Marks</label>
+                            <input type="text" placeholder="Enter total marks" required>
+                        </div>
+                    </div>
+                </div>
+                <button class="nextBtn">
+                    <span class="btnText">Upload Marks</span>
+                </button>
+            </div>
+        </form>
+    
 </div>
 <%- include('../partials/footer.ejs') %>
