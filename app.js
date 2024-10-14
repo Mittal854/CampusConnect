@@ -22,7 +22,6 @@ const users = [
 app.post("/login", (req, res) => {
   const { email, password, role } = req.body;
 
-  // Find the user in the dummy data
   const user = users.find(
     (u) =>
       u.email === email &&
@@ -31,7 +30,6 @@ app.post("/login", (req, res) => {
   );
 
   if (user) {
-    // Simulate successful login
     if (user.role === "student") {
       return res.redirect("/student_dashboard");
     } else if (user.role === "teacher") {
@@ -42,7 +40,6 @@ app.post("/login", (req, res) => {
       return res.redirect("/admin_dashboard");
     }
   } else {
-    // If the user is not found, return an error message
     return res.status(401).send("Invalid email, password, or role");
   }
 });
